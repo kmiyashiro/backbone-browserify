@@ -1,0 +1,21 @@
+{
+  "name"          : "backbone-browserify",
+  "description"   : "Give your JS App some Backbone with Models, Views, Collections, and Events. - For Browserify",
+  "url"           : "http://documentcloud.github.com/backbone/",
+  "keywords"      : ["util", "functional", "server", "client", "browser"],
+  "author"        : "Jeremy Ashkenas <jeremy@documentcloud.org>",
+  "contributors"  : [],
+  "dependencies"  : {
+    "underscore"  : ">=1.1.2"
+  },
+  "lib"           : "lib",
+  "main"          : "./lib/backbone-browserify.js",
+  "repository"    : "git://github.com/kmiyashiro/backbone-browserify.git",
+  "version"       : "0.5.3",
+  "browserify"    : {
+    "dependencies"  : {
+      "underscore"  : ">=1.1.2"
+    },
+    "main"         : "lib/backbone-browserify.js"
+  }
+}
