@@ -14,7 +14,6 @@ browserify({
 
 ... or to alias it to just "backbone":
 
-### Server Side
 ````javascript
 browserify({
   require : { jQuery: 'jquery-browserify', backbone: 'backbone-browserify' }
@@ -23,7 +22,8 @@ browserify({
 
 ### Client Side
 ````javascript
-var Backbone = require('backbone-browserify'),
+var $ = jQuery = require('jquery-browserify'),
+    Backbone = require('backbone-browserify'),
     MyView = Backbone.View.extend({
         defaults: {
             title: 'Horay'
@@ -33,9 +33,10 @@ var Backbone = require('backbone-browserify'),
 
 ... or if you aliased it to 'backbone':
 
-### Client Side
 ````javascript
-var Backbone = require('backbone'),
+
+var $ = jQuery = require('jquery'),
+    Backbone = require('backbone'),
     MyView = Backbone.View.extend({
         defaults: {
             title: 'Horay'
