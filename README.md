@@ -24,26 +24,52 @@ browserify({
 });
 ````
 
+#### Express example
+```js
+app.configure(function(){
+  app.set('views', __dirname + '/views');
+  app.set('view engine', 'jade');
+  app.use(express.bodyParser());
+  app.use(express.methodOverride());
+  app.use(app.router);
+  app.use(express.static(__dirname + '/public'));
+  app.use(browserify({
+    require : { jQuery: 'jquery-browserify', backbone: 'backbone-browserify' }
+  }));
+});
+```
+
 ### Client Side
 ````javascript
 var $ = jQuery = require('jquery-browserify'),
     Backbone = require('backbone-browserify'),
     MyView = Backbone.View.extend({
-        defaults: {
-            title: 'Horay'
+        el: 'body',
+        initialize: function() {
+            this.render();
+        },
+        render: function() {
+            $(this.el).html('<h1>Oh hi</h1>');
         }
     });
+    
+    $(document).ready(function() { var myView = new MyView(); });
 ````
 
 ... or if you aliased it to 'backbone':
 
 ````javascript
-
 var $ = jQuery = require('jquery'),
     Backbone = require('backbone'),
     MyView = Backbone.View.extend({
-        defaults: {
-            title: 'Horay'
+        el: 'body',
+        initialize: function() {
+            this.render();
+        },
+        render: function() {
+            $(this.el).html('<h1>Oh hi</h1>');
         }
     });
+    
+    $(document).ready(function() { var myView = new MyView(); });
 ````
