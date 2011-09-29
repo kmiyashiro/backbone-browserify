@@ -53,7 +53,7 @@ var $ = jQuery = require('jquery-browserify'),
         }
     });
     
-    $(document).ready(function() { var myView = new MyView(); });
+$(document).ready(function() { var myView = new MyView(); });
 ````
 
 ... or if you aliased it to 'backbone':
@@ -71,5 +71,5 @@ var $ = jQuery = require('jquery'),
         }
     });
     
-    $(document).ready(function() { var myView = new MyView(); });
+$(document).ready(function() { var myView = new MyView(); });
 ````
