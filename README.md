@@ -40,6 +40,9 @@ app.configure(function(){
 ```
 
 ### Client Side
+
+***Include `browserify.js` like this first: `<script src="browserify.js"></script>`
+
 ````javascript
 var $ = jQuery = require('jquery-browserify'),
     Backbone = require('backbone-browserify'),
