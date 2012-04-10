@@ -20,7 +20,7 @@ browserify({
 
 ````javascript
 browserify({
-  require : { jQuery: 'jquery-browserify', backbone: 'backbone-browserify' }
+  require : { jquery: 'jquery-browserify', backbone: 'backbone-browserify' }
 });
 ````
 
@@ -34,7 +34,7 @@ app.configure(function(){
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
   app.use(browserify({
-    require : { jQuery: 'jquery-browserify', backbone: 'backbone-browserify' }
+    require : { jquery: 'jquery-browserify', backbone: 'backbone-browserify' }
   }));
 });
 ```
