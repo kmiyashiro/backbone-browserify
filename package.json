@@ -8,10 +8,15 @@
   "dependencies"  : {
     "underscore"  : ">=1.1.2"
   },
+  "devDependencies": {
+    "jquery-browserify": "~1.7",
+    "express"     : "~2",
+    "browserify"  : "*"
+  },
   "lib"           : "lib",
   "main"          : "lib/backbone-browserify.js",
   "repository"    : "git://github.com/kmiyashiro/backbone-browserify.git",
-  "version"       : "0.9.2",
+  "version"       : "0.9.2-1",
   "browserify"    : {
     "dependencies"  : {
       "underscore"  : ">=1.1.2"

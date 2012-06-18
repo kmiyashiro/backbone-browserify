@@ -1,11 +1,17 @@
 # Backbone-browserify
 ## packaged for use with [node-browserify](https://github.com/substack/node-browserify).
 
+### Breaking change 0.9.2-1
+
+Removed require('jquery') in Backbone source for `$` assignment. Didn't make sense, see #6
+
+### Install
+
 ```bash
 npm install backbone-browserify
 ```
 
-**Important:** You must require `jquery-browserify` or Zepto (untested) with Browserify before you require Backbone, just like normal.
+**Important:** You must require `jquery-browserify`, 'br-jquery', or Zepto (untested) with Browserify before you require Backbone, just like normal.
 
 Just add it to your browserify require list and use it! Make sure you also have Underscore installed via npm as Backbone will automatically require it.
 
