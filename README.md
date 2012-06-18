@@ -3,7 +3,7 @@
 
 ### Breaking change 0.9.2-1
 
-Removed require('jquery') in Backbone source for `$` assignment. Didn't make sense, see #6
+Removed require('jquery') in Backbone source for `$` assignment. Didn't make sense, see [#6](https://github.com/kmiyashiro/backbone-browserify/pull/6)
 
 ### Install
 
