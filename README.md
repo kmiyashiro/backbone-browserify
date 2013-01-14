@@ -1,3 +1,30 @@
+# DEPRECATED
+
+## Use Backbone 0.9.9=<
+
+Backbone has added exports support as of 0.9.9, so just use the normal Backbone package.
+
+To use Backbone with jQuery, remember to set `$` after you require Backbone.
+
+```js
+var $ = require('jquery-browserify');
+
+var Backbone = require('../lib/backbone-browserify');
+Backbone.$ = $;
+
+MyView = Backbone.View.extend({
+    el: 'body',
+    initialize: function() {
+        this.render();
+    },
+    render: function() {
+        $(this.el).html('<h1>Oh hi</h1>');
+    }
+});
+
+new MyView();
+```
+
 # Backbone-browserify
 ## packaged for use with [node-browserify](https://github.com/substack/node-browserify).
 
