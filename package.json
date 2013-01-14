@@ -1,6 +1,6 @@
 {
   "name"          : "backbone-browserify",
-  "description"   : "Give your JS App some Backbone with Models, Views, Collections, and Events. - For Browserify",
+  "description"   : "DEPRECATED, 0.9.9 works with browserify",
   "url"           : "http://documentcloud.github.com/backbone/",
   "keywords"      : ["util", "functional", "server", "client", "browser", "browserify", "backbone"],
   "author"        : "Jeremy Ashkenas <jeremy@documentcloud.org>",
